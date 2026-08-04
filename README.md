@@ -1,4 +1,4 @@
-![Unpacking ChatGPT 项目封面](assets/readme-cover.png)
+![Unpacking ChatGPT 项目封面](assets/readme-cover.webp)
 
 # Unpacking ChatGPT（拆开 GPT）
 
