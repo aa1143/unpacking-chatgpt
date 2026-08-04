@@ -1,8 +1,17 @@
-# 拆开 ChatGPT
+# Unpacking ChatGPT（拆开 GPT）
 
 用后端工程师的视角，把 ChatGPT 从模型原理到工程应用讲明白。
 
-这个项目用于管理《拆开 ChatGPT》系列的公众号文章、视频脚本、白板分镜、封面、社交平台文案、参考资料和发布记录。
+《拆开 GPT》是一套面向非专业读者的中文科普系列。每一期从一个具体问题出发，只解释一个核心概念，并把模型原理连接到真实的产品现象和工程实践。
+
+项目及仓库名称为 **Unpacking ChatGPT**，中文内容品牌为“拆开 GPT”。本仓库统一管理系列的公众号文章、视频脚本、白板与分镜、封面、社交平台文案、参考资料和发布记录。
+
+## 从这里开始
+
+- 了解整个系列：[内容路线图](ROADMAP.md)
+- 阅读第一期：[提问后发生了什么？](episodes/01-提问后发生了什么/article.md)
+- 制作新一期：[单期内容模板](templates/episode-template.md)
+- 准备发布：[发布检查模板](templates/publish-template.md)
 
 ## 系列定位
 
@@ -29,6 +38,13 @@
 
 完整规划见 [ROADMAP.md](ROADMAP.md)。
 
+这里会严格区分几个容易混用的概念：
+
+- **ChatGPT**：面向用户的 AI 产品。
+- **GPT**：OpenAI 的一类生成式预训练模型。
+- **Transformer**：GPT 等大语言模型采用的核心神经网络架构。
+- **LLM（大语言模型）**：通过大量文本训练、以 Token 为基本单位处理和生成语言的模型。
+
 ## 当前进度
 
 | 期数 | 主题 | 公众号 | 视频稿 | 白板 | 封面 | 发布 |
@@ -45,6 +61,22 @@
 - [白板规划](episodes/01-提问后发生了什么/whiteboard-plan.md)
 - [平台文案](episodes/01-提问后发生了什么/social-copy.md)
 - [发布清单](episodes/01-提问后发生了什么/publish.md)
+
+## 仓库目录
+
+```text
+unpacking-chatgpt/
+├── episodes/       # 各期文章、视频稿、分镜和发布材料
+├── covers/         # 封面母版与各平台导出图
+├── whiteboards/    # 白板模板与图示
+├── templates/      # 单期内容和发布模板
+├── references/     # 内容策略与参考资料
+├── .gitignore      # 不进入版本库的大文件与缓存规则
+├── ROADMAP.md      # 系列选题和阶段规划
+└── README.md       # 项目入口
+```
+
+单期目录统一使用 `NN-中文主题` 命名，并包含 `article.md`、`video-script.md`、`storyboard.md`、`whiteboard-plan.md`、`social-copy.md` 和 `publish.md`。
 
 ## 视觉系统
 
@@ -70,5 +102,6 @@
 
 ## 仓库说明
 
-仓库保存文稿、Excalidraw源文件、封面、提示词和发布记录。原始录屏、剪映缓存和大体积成片不提交Git，详见 `.gitignore`。
+仓库保存文稿、白板源文件、封面母版、提示词和发布记录。高分辨率封面母版会被保留，各平台尺寸作为独立文件导出。
 
+原始录屏、音频、剪辑工程缓存和渲染成片不提交 Git，详见 [`.gitignore`](.gitignore)。这些文件体积大、更新频繁，不适合使用普通 Git 管理。
