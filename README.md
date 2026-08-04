@@ -1,3 +1,5 @@
+![Unpacking ChatGPT 项目封面](assets/readme-cover.png)
+
 # Unpacking ChatGPT（拆开 GPT）
 
 用后端工程师的视角，把 ChatGPT 从模型原理到工程应用讲明白。
